@@ -1,0 +1,23 @@
+Codex Game Skills — Source Attribution
+
+This project is based on and contains modified portions of:
+
+  Claude Code Game Studios
+  Author: Donchitos
+  Source: https://github.com/Donchitos/Claude-Code-Game-Studios
+  Base revision: be8993bbc5a1f016bc770b2846ce06272d284526
+  Copyright (c) 2026 Donchitos
+  License: MIT
+
+The original copyright notice and the complete MIT permission and warranty
+notice are preserved in LICENSE and must accompany copies or substantial
+portions of the derived software and documentation.
+
+Modifications maintained by this repository include project-local Codex skills,
+AGENTS.md instructions, native Codex role configurations, portable role briefs,
+explicit configuration and validation commands, standalone maintenance tools,
+runtime regression tests, and Codex-focused documentation.
+
+The repository maintains these files directly as a Codex game-development
+collection. Rebuilding Git history does not change the original authorship
+or the license obligations of the derived content.

@@ -1,0 +1,24 @@
+name: Codex validation
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 tools/sync_roles.py --check
+      - run: python3 tools/validate_codex.py
+      - run: python3 -m unittest discover -s tests/codex -v
+      - run: git diff --check
